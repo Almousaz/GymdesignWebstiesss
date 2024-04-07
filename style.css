@@ -1,185 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins",sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 .nav {
-    position: fixed;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 6.5rem;
+  background: #222;
+  z-index: 100000;
+}
+.nav h2 {
+  color: #fff;
+  font-size: 1.7rem;
+}
+#item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#item li {
+  list-style: none;
+  padding-right: 50px;
+}
+
+#item li a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+#item li a:hover,
+#item .icon i:hover {
+  color: #ff5733;
+  cursor: pointer;
+}
+#item .icon i {
+  color: #fff;
+  padding-right: 30px;
+  font-weight: bolder;
+}
+.back {
+  background-image: url("bg.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.back .overlay {
+  background: #171819;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+  z-index: -1;
+}
+
+.mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.mid p {
+  color: #7f8c8d;
+  font-size: 1.3rem;
+  margin-bottom: 1.4rem;
+}
+.mid h2 {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.mid .btn {
+  margin-top: 2rem;
+}
+
+.mid .btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.mid .btn a.simple {
+  color: #fff;
+  font-weight: 500;
+  padding: 0.9rem 1.6rem;
+}
+.mid .btn a.simple:hover {
+  color: #ff5733;
+}
+
+.mid .btn a.border {
+  color: #ff5733;
+  border: 1px solid #ff5733;
+  font-weight: 500;
+  padding: 0.9rem 1.6rem;
+  border-radius: 3px;
+}
+.mid .btn a.border:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 8rem 15rem;
+  background: #171819;
+}
+
+.details h3,
+h6,
+h5 {
+  color: #fff;
+}
+
+.details .one {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.details .one h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1.1rem;
+}
+
+.details .one h6 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+}
+.details .one p {
+  color: #666262;
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+}
+
+.details .one a {
+  color: #fff;
+  background: #f13a11;
+  padding: 1rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.details .one a:hover {
+  background: #fff;
+  color: #f13a11;
+}
+
+.details .two {
+  width: 45%;
+  border-left: 1px solid #666262;
+  padding-left: 4rem;
+}
+.details .two h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1.1rem;
+}
+
+.details .two h5 {
+  font-size: 1.1rem;
+}
+
+.details .two p {
+  font-size: 1.1rem;
+  color: #666262;
+  margin-bottom: 0.8rem;
+}
+
+.trainer{
+    background: #f9f9f9;
+    padding: 8rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 1rem 6.5rem;
-    background: #222;
-    z-index: 100000;
 }
-.nav h2{
-    color: #fff;
-    font-size: 1.7rem;
-}
-#item{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-#item li{
-    list-style: none;
-    padding-right: 50px;
-}
-
-#item li a{
-    text-decoration: none;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #fff;
-}
-#item li a:hover, #item .icon i:hover{
-    color: #ff5733;
-    cursor: pointer;
-}
-#item .icon i{
-    color: #fff;
-    padding-right: 30px;
-    font-weight: bolder;
-}
-.back{
-    background-image: url("bg.jpg");
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-}
-.back .overlay{
-    background: #171819;
-    width: 100%;
-    height: 100%;
-    opacity: 0.85;
-    z-index: -1;
+.trainer .about{
+    width: 39%;
 
 }
-
-.mid{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.trainer .about h2{
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom: 1.8rem;
 }
-.mid p{
+.trainer .about p{
     color: #7f8c8d;
-    font-size: 1.3rem;
-    margin-bottom: 1.4rem;
-}
-.mid h2{
-    color: #fff;
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-.mid .btn{
-    margin-top: 2rem;
+    font-size: 1.1rem;
 }
 
-.mid .btn a{
-   text-decoration: none; 
-   text-transform: uppercase;
-}
-.mid .btn a.simple{
-    color: #fff;
-    font-weight: 500;
-    padding: 0.9rem 1.6rem;
- }
- .mid .btn a.simple:hover{
-     color: #ff5733;
- }
-
- .mid .btn a.border{
-    color: #ff5733;
-    border: 1px solid #ff5733;
-    font-weight: 500;
-    padding: 0.9rem 1.6rem;
-    border-radius: 3px;
- }
- .mid .btn a.border:hover{
-    background-color: #fff;
-    border: 1px solid #fff;
- }
-
- .details {
-    width: 100%;
+.trainer .people{
+    width: 57%;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 8rem 15rem;
-    background: #171819;
- }
+}
 
- .details h3,h6,h5{
-    color: #fff;
- }
-
- .details .one{
+.trainer .people .team1{
     width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01),0 4.4px 10px rgba(0, 0, 0, 0.015), 0 10.6px 24.1px rgba(0, 0,0, 0.02), 0 35px 80px rgba(0, 0, 0, 0.03);
+
+}
+.trainer .people .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+
+}
+.trainer .people .team1 .name, .trainer .people .team1 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.trainer .people .team1 .name{
+    padding: 5px 20px 0 20px;
+
+}
+
+.trainer .people .team1 .teamDetails{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
- }
+    justify-content: center;
+    padding-bottom: 10px;
+}
 
- .details .one h3{
-    font-size: 2.5rem;
-    padding-bottom: 1.1rem;
- }
-
- .details .one h6{
+.trainer .people .team1 .name h4{
+   color: #212529; 
+   font-size: 1.5rem;
+}
+.trainer .people .team1 .name i, .trainer .people .team1 .pro i{
     font-size: 1.3rem;
-    font-weight: 400;
-    padding-bottom: 1.2rem;
- }
- .details .one p{
-    color: #666262;
-    font-size: 1.2rem;
-    padding-bottom: 3rem;
- }
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+.trainer .people .team1 .pro{
+    padding: 0 20px 5px 20px;
+}
 
- .details .one a{
-    color: #fff;
-    background: #f13a11;
-    padding: 1rem 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
- }
-
- .details .one a:hover{
-    background: #fff;
-    color: #f13a11;
- }
-    
-
-
- .details .two{
-    width: 45%;
-    border-left: 1px solid #666262;
-    padding-left: 4rem;
-    
- }
- .details .two h3{
-    font-size: 2.5rem;
-    padding-bottom: 1.1rem;
- }
-
- .details .two h5{
-    font-size: 1.1rem;
- }
-
- .details .two p{
-    font-size: 1.1rem;
-    color: #666262;
-    margin-bottom: 0.8rem;
+.trainer .people .team1 .pro p{
+    color: #212529; 
  }
